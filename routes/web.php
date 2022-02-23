@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ComicController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//al primo posto il nome della risorsa principale e al secondo il nome del relativo controller
+Route::resource('comics', 'ComicController');
+
+
+
+//php artisan route:list per vedere il percorso di tutte le rotte create
