@@ -26,7 +26,7 @@ class ComicController extends Controller
      // create mostra un form per inserire i dati quindi dobbiamo utilizzare view
     public function create()
     {
-        //
+        return view('comics.create', ['title' => 'Create New Comic']);
     }
 
     /**
