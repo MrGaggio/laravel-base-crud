@@ -22,6 +22,8 @@ class ComicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     // create mostra un form per inserire i dati quindi dobbiamo utilizzare view
     public function create()
     {
         //
