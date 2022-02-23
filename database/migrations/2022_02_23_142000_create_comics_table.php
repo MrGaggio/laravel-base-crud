@@ -12,9 +12,19 @@ class CreateComicsTable extends Migration
      * @return void
      */
     public function up()
-    {
+    {   
+
+
+        //inseriamo tutti i dettagli che descrivono l'oggetto
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+            //autore, editore, prezzo, numero pagine, cadenza uscita, foto copertina
+            $table->string('author');
+            $table->string('publisher');
+            $table->float('page_number');
+            $table->string('relase');
+            $table->float('price');
+            $table->string('photo');
             $table->timestamps();
         });
     }
