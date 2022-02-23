@@ -19,8 +19,8 @@ class ComicSeeder extends Seeder
         // a ogni ciclo crea i dati fake per 25 volte
         for ($i=0; $i < 25; $i++) { 
             $comic = new Comic();
-            $comic->author = $faker->word(2);
-            $comic->publisher = $faker->word(2);
+            $comic->author = 'prova';
+            $comic->publisher = 'prova';
             $comic->page_number = $faker->randomFloat(1, 59, 200);
             $comic->relase = 'monthly';
             $comic->price = $faker->randomFloat(1, 3, 10);
