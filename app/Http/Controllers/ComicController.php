@@ -37,7 +37,16 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all()); con questo verifico cosa stampo dei dati inseriti sul form
+
+        //salva i nuovi dati
+        $data = $request->all();
+        $comic = new Comic();
+        $comic->fill($data);
+        $comic->save();
+
+        return redirect()->route('comics.show', $comic->id);
+
     }
 
     /**
