@@ -7,6 +7,8 @@
 
 
 
+
+
 @section('content')
 <div class="container">
   <div class="row">
@@ -17,7 +19,7 @@
 
         <div class="mb-3">
           <label for="author" class="form-label">Author</label>
-          <input type="text" class="form-control" id="author" name="brand">
+          <input type="text" class="form-control" id="author" name="author">
         </div>
 
         <div class="mb-3">
